@@ -18,6 +18,10 @@ a:hover {
     cursor: pointer;
 }
 
+blockquote {
+    font-style: italic;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -25,6 +29,13 @@ a:hover {
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+}
+
+p.text-center.black {
+    color: black;
+}
+.text-center {
+    color: #575757;
 }
 
 .bloc {
@@ -639,16 +650,7 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
+h1, h2, h3, h4, h5, h6, label, .btn, a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -677,7 +679,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -702,6 +704,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -735,8 +739,8 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
-    color: #FFFFFF!important;
+.black {
+    color: black!important;
 }
 
 .portfolio-thumb {
@@ -775,12 +779,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1035,8 +1039,22 @@ h4 {
     }
 }
 
+
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+@media screen AND (min-width:375px) {
+    img {
+        max-width: 425px;
+        margin-left: 37px;
+    }
+}
+
+@media screen AND (min-width: 768px) {
+    img {
+        margin-left:5px;
     }
 }
